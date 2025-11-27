@@ -53,6 +53,51 @@ header h1 {
     color: #ffffff;
 }
 
+/* Music discography section */
+.music-discography {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.music-discography p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.music-discography a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    transition: color 0.2s ease;
+}
+
+.music-discography a:hover {
+    color: #cccccc;
+}
+
+/* Pytti section */
+.pytti-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pytti-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.pytti-section p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.pytti-section p strong {
+    font-weight: bold;
+}
+
 /* Aliases styles */
 .aliases {
     margin-bottom: 40px;
