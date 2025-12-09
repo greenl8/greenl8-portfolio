@@ -160,6 +160,14 @@ header h1 {
     font-weight: normal;
 }
 
+.music-credit {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: center;
+}
+
 /* Testimonials section */
 .testimonials {
     margin-top: 60px;
