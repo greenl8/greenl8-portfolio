@@ -98,6 +98,17 @@ header h1 {
     font-weight: bold;
 }
 
+.pytti-section a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    transition: color 0.2s ease;
+}
+
+.pytti-section a:hover {
+    color: #cccccc;
+}
+
 /* Aliases styles */
 .aliases {
     margin-bottom: 40px;
