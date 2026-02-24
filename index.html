@@ -193,6 +193,21 @@
                     <img src="media/deng.png" alt="Testimonial from deng" class="testimonial-image">
                     <img src="media/ydaklu.png" alt="Testimonial from ydaklu" class="testimonial-image">
                     <img src="media/howell.png" alt="Testimonial from howell" class="testimonial-image">
+                    <img src="media/amelia.png" alt="Testimonial from ameliagreville - Rotoscoping & Chroma Keying" class="testimonial-image">
+                    <img src="media/foodsack.png" alt="Testimonial from foodsack - Music Visualization" class="testimonial-image">
+                    <img src="media/gawkman.png" alt="Testimonial from gawkman - Music Visualization" class="testimonial-image">
+                    <img src="media/imran.png" alt="Testimonial from imran_lives - AI Video" class="testimonial-image">
+                    <img src="media/imran2.png" alt="Testimonial from imran_lives - AI Video" class="testimonial-image">
+                    <img src="media/jayks90 1.png" alt="Testimonial from jayks90 - Visual Effects" class="testimonial-image">
+                    <img src="media/jayks90 2.png" alt="Testimonial from jayks90 - Visual Effects" class="testimonial-image">
+                    <img src="media/jayks90 3.png" alt="Testimonial from jayks90 - Visual Effects" class="testimonial-image">
+                    <img src="media/joez1.png" alt="Testimonial from joe_z1 - Rotoscoping & Chroma Keying" class="testimonial-image">
+                    <img src="media/lleven.png" alt="Testimonial from llevenleven - Visual Effects" class="testimonial-image">
+                    <img src="media/log1.png" alt="Testimonial from logsperity - Visual Effects" class="testimonial-image">
+                    <img src="media/log2.png" alt="Testimonial from logsperity - AI Video" class="testimonial-image">
+                    <img src="media/paul nsc.png" alt="Testimonial from paul_nsc - Visual Effects" class="testimonial-image">
+                    <img src="media/shotochris.png" alt="Testimonial from shotochris - Music Visualization" class="testimonial-image">
+                    <img src="media/ydaklu2.png" alt="Testimonial from ydakalu - Music Visualization" class="testimonial-image">
                 </div>
             </section>
             
@@ -210,5 +225,53 @@
             </section>
         </main>
     </div>
+    <!-- Lightbox Modal for Testimonials -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged testimonial">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lightbox functionality
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const testimonialImages = document.querySelectorAll('.testimonial-image');
+
+            // Add click event to each testimonial image
+            testimonialImages.forEach(function(img) {
+                img.onclick = function() {
+                    lightbox.classList.add('active');
+                    lightboxImg.src = this.src;
+                    lightboxImg.alt = this.alt;
+                    document.body.style.overflow = 'hidden';
+                };
+            });
+
+            // Close lightbox function
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Close button click
+            lightboxClose.onclick = closeLightbox;
+
+            // Click outside image to close
+            lightbox.onclick = function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            };
+
+            // Escape key to close
+            document.onkeydown = function(e) {
+                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            };
+        });
+    </script>
 </body>
 </html>
