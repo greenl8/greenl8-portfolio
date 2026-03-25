@@ -331,6 +331,13 @@ header h1 {
     color: #cccccc;
 }
 
+/* YouTube Shorts vertical embed */
+.video-item-short iframe {
+    width: 315px;
+    max-width: 315px;
+    height: 560px;
+}
+
 /* Demiurge Live section */
 .demiurge-live {
     text-align: center;
@@ -365,6 +372,12 @@ header h1 {
         max-width: 100%;
     }
     
+    .video-item-short iframe {
+        width: 100%;
+        max-width: 280px;
+        height: 498px;
+    }
+    
     .contact-info h2,
     .reels h2 {
         font-size: 1.3rem;
@@ -397,6 +410,11 @@ header h1 {
     
     .video-item iframe {
         height: 200px;
+    }
+    
+    .video-item-short iframe {
+        max-width: 225px;
+        height: 400px;
     }
     
     .contact-info h2,
